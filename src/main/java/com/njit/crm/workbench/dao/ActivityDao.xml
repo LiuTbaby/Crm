@@ -89,7 +89,7 @@
             </if>
 
             <if test="owner!=null and owner!=''">
-                and owner like '%' #{owner} '%'
+                and u.name like '%' #{owner} '%'
             </if>
 
             <if test="startDate!=null and startDate!=''">
