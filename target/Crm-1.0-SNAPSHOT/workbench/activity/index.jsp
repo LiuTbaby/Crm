@@ -37,15 +37,6 @@
             //为创建按钮绑定事件，打开需要操作的模态窗口
             $("#addBtn").click(function () {
 
-                // $(".time").datetimepicker({
-                //     minView: "month",
-                //     language: 'zh-CN',
-                //     format: 'yyyy-mm-dd',
-                //     autoclose: true,
-                //     todayBtn: true,
-                //     pickerPosition: "bottom-left"
-                // });
-
                 //需要操作该模态窗口的jquery对象，调用modal方法，为该窗口传递参数 show:打开模态窗口   hide:关闭模态窗口
                 // $("#createActivityModal").modal("show");
 
@@ -389,7 +380,7 @@
 
                         html += '<tr class="active">';
                         html += '<td><input type="checkbox" name="xz" value="' + n.id + '"/></td>';
-                        html += '<td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href=\'workbench/activity/detail.jsp\';">' + n.name + '</a></td>';
+                        html += '<td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href=\'workbench/activity/detail.do?id='+n.id+'\';">' + n.name + '</a></td>';
                         html += '<td>' + n.owner + '</td>';
                         html += '<td>' + n.startDate + '</td>';
                         html += '<td>' + n.endDate + '</td>';
