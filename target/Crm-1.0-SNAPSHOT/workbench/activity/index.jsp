@@ -62,6 +62,7 @@
                             html += "<option value='" + n.id + "'>" + n.name + "</option>";
 
                         })
+
                         $("#create-owner").html(html);
 
                         //将当前登录的用户设置为下拉框默认的选项
